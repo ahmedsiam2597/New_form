@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout/css/all.min.css">
+    <link rel="stylesheet" href="layout/css/main.css">
+</head>
+
+<body>
+
+
+    <div class="formBx" id="formBx">
+        <div class="login face form">
+            <form action="">
+                <h2>Login </h2>
+                <div class="group">
+                    <label for="">Username</label>
+                    <input type="text">
+                </div>
+                <div class="group">
+                    <label for="">Password</label>
+                    <input type="password">
+                </div>
+                <button>Login</button>
+                <div class="icon">
+                    <div class="or">
+                        <span>or</span>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <p>Forget Password ? <a href="#">Click Here</a></p>
+                <p>Create New Account ? <a href="#" id="reg-btn">Click Here</a></p>
+            </form>
+        </div>
+        <div class="register face back form">
+            <form action="">
+                <h2>Register </h2>
+                <div class="group">
+                    <label for="">Username</label>
+                    <input type="text">
+                </div>
+                <div class="group">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+                <div class="group">
+                    <label for="">Password</label>
+                    <input type="password">
+                    <span class="fa fa-eye"></span>
+                </div>
+                <button>Register</button>
+                <div class="icon">
+                    <div class="or">
+                        <span>or</span>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <p>Go To Login ? <a href="#" id="login-btn">Click Here</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        let regBtn = document.getElementById("reg-btn");
+        let formBx = document.getElementById("formBx");
+        let loginBtn = document.getElementById("login-btn");
+        regBtn.onclick = () => {
+            formBx.classList.add("active");
+        }
+        loginBtn.onclick = () => {
+            formBx.classList.remove("active");
+        }
+    </script>
+
+</body>
+
+</html>
